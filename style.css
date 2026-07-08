@@ -1,0 +1,366 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#090909;
+color:white;
+overflow-x:hidden;
+
+}
+
+header{
+
+position:fixed;
+width:100%;
+backdrop-filter:blur(20px);
+padding:20px;
+z-index:999;
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:90%;
+margin:auto;
+
+}
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+
+}
+
+section{
+
+padding:100px 10%;
+
+}
+
+.hero{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+
+}
+
+.hero img{
+
+width:250px;
+border-radius:60%;
+}
+
+.name{
+
+font-size:60px;
+color:#00ffd5;
+
+}
+
+button{
+
+padding:15px 35px;
+margin-top:20px;
+background:#00ffd5;
+border:none;
+border-radius:30px;
+cursor:pointer;
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:scale(1.1);
+
+}
+
+.bar{
+
+background:#222;
+height:12px;
+border-radius:30px;
+overflow:hidden;
+margin-bottom:20px;
+
+}
+
+.bar span{
+
+display:block;
+height:100%;
+background:#00ffd5;
+animation:grow 2s;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+padding:30px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border-radius:20px;
+transition:.5s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.blob{
+
+position:fixed;
+width:300px;
+height:300px;
+border-radius:50%;
+filter:blur(120px);
+z-index:-1;
+
+}
+
+.b1{
+
+background:#00ffd5;
+left:-100px;
+top:0;
+
+}
+
+.b2{
+
+background:#8b5cf6;
+right:-100px;
+bottom:0;
+
+}
+
+#loader{
+
+position:fixed;
+width:100%;
+height:100vh;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+z-index:99999;
+
+}
+
+.reveal{
+
+opacity:0;
+transform:translateY(70px);
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+@keyframes grow{
+
+from{
+
+width:0;
+
+}
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.skill-card{
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:.4s;
+cursor:pointer;
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 15px 35px rgba(0,255,213,.3);
+
+}
+
+.skill-card h3{
+
+margin-top:15px;
+font-size:20px;
+
+}
+
+.skill-card i{
+
+font-size:40px;
+color:#00ffd5;
+
+}
+.section-title{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:45px;
+    color:#00ffd5;
+
+}
+
+.about-card{
+
+    max-width:1000px;
+    margin:auto;
+    padding:40px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    transition:.4s;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,255,213,.25);
+
+}
+
+.about-card p{
+
+    font-size:20px;
+    line-height:2;
+    color:#ddd;
+    text-align:justify;
+
+}
+
+.about-card span{
+
+    color:#00ffd5;
+    font-weight:600;
+
+}
+.education-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+
+}
+
+.education-card{
+
+padding:30px;
+background:rgba(255,255,255,.08);
+border-radius:20px;
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.12);
+transition:.4s;
+
+}
+
+.education-card:hover{
+
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 15px 35px rgba(0,255,213,.3);
+
+}
+
+.education-card h3{
+
+font-size:28px;
+color:#00ffd5;
+margin-bottom:10px;
+
+}
+
+.education-card h4{
+
+font-size:20px;
+margin-bottom:10px;
+
+}
+
+.education-card p{
+
+font-size:18px;
+color:#ddd;
+
+}
+
+.education-card span{
+
+display:inline-block;
+margin-top:15px;
+padding:8px 18px;
+border-radius:20px;
+background:#00ffd5;
+color:#000;
+font-weight:bold;
+
+}
+footer p{
+    text-align: center;
+    margin-bottom: 20pxw;
+}
+.left p{
+    margin-top: 19px;
+    margin-bottom: 5px;
+}
