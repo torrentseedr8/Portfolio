@@ -358,9 +358,214 @@ font-weight:bold;
 }
 footer p{
     text-align: center;
-    margin-bottom: 20pxw;
+    margin-bottom: 20px;
 }
 .left p{
     margin-top: 19px;
     margin-bottom: 5px;
+}
+@media (max-width:992px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero img{
+        width:220px;
+    }
+
+    .name{
+        font-size:45px;
+    }
+
+    .left p{
+        max-width:700px;
+        margin:auto;
+        margin-top:20px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    section{
+        padding:80px 7%;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav h2{
+        font-size:28px;
+    }
+
+    nav ul{
+        gap:15px;
+        font-size:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        min-height:auto;
+        padding-top:120px;
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero img{
+        width:190px;
+    }
+
+    .name{
+        font-size:36px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    #typing{
+        font-size:24px;
+    }
+
+    .left p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    button{
+        padding:12px 28px;
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .about-card{
+        padding:25px;
+    }
+
+    .about-card p{
+        font-size:17px;
+        line-height:1.8;
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .skill-card{
+        padding:20px;
+    }
+
+    .skill-card h1{
+        font-size:35px;
+    }
+
+    .skill-card h3{
+        font-size:18px;
+    }
+
+    .education-grid{
+        grid-template-columns:1fr;
+    }
+
+    .education-card{
+        padding:25px;
+    }
+
+    .project{
+        flex-direction:column;
+    }
+
+    .project img{
+        width:100%;
+    }
+
+    .contact-box{
+        padding:20px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    nav ul{
+        gap:10px;
+        font-size:14px;
+    }
+
+    .hero img{
+        width:160px;
+    }
+
+    .name{
+        font-size:28px;
+    }
+
+    .hero h1{
+        font-size:26px;
+    }
+
+    #typing{
+        font-size:20px;
+    }
+
+    .left p{
+        font-size:15px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .about-card p{
+        font-size:15px;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skill-card{
+        padding:18px;
+    }
+
+    .education-card h3{
+        font-size:22px;
+    }
+
+    .education-card h4{
+        font-size:18px;
+    }
+
+    .education-card p{
+        font-size:16px;
+    }
+
+    button{
+        width:100%;
+    }
+
+}
+
+footer p{
+    text-align:center;
+    margin-bottom:20px;
 }
